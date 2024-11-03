@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.gallery {
+  width: 75%;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 20px;
+  padding: 10px 150px 80px 150px;
+}
+
+.gallery .box {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .box.satu {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.gallery .box.empat {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.gallery .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery:hover .box {
+  opacity: 0.4;
+}
+
+.gallery:hover .box:hover {
+  opacity: 1;
+}
