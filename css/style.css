@@ -19,6 +19,11 @@ header h1 {
 }
 
 .gallery {
+  width: 100%;
+}
+
+/* GALLERY GRID CSS */
+.gallery .gallery-grid {
   width: 75%;
   margin: 30px auto 0 auto;
   display: grid;
@@ -28,7 +33,7 @@ header h1 {
   padding: 10px 150px 80px 150px;
 }
 
-.gallery .box {
+.gallery .gallery-grid .box {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -37,30 +42,31 @@ header h1 {
   transition: transform 0.2s;
 }
 
-.gallery .box.satu {
+.gallery .gallery-grid .box.satu {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
 
-.gallery .box.empat {
+.gallery .gallery-grid .box.empat {
   grid-column: 3 / span 2;
   grid-row: 2 / span 2;
 }
 
-.gallery .box img {
+.gallery .gallery-grid .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gallery:hover .box {
+.gallery .gallery-grid:hover .box {
   opacity: 0.4;
 }
 
-.gallery:hover .box:hover {
+.gallery .gallery-grid:hover .box:hover {
   opacity: 1;
 }
 
-.gallery .box:active {
+.gallery .gallery-grid .box:active {
   transform: scale(0.9);
 }
+/* GALLERY GRID CSS */
